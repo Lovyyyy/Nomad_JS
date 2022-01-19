@@ -1,0 +1,16 @@
+#basenumber {
+  height: 1rem;
+  width: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: inline;
+}
+
+.gameresult {
+  font-weight: bolder;
+}
