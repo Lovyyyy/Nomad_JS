@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Vanilla Challenge</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css"></link>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/stlye.css" />
+  <title>Document</title>
+  
+</head>
+<body>
+  <form id="login-form" class="hidden">
+  <input required maxlength="15 type="text" placeholder="what is your name?"/>
+  <input type="submit" value="Log"/ >
+  </form>
+  <h2 id="clock"></h2>
+  <h1 id="greeting" class="hidden"></h1>
+  <form id="todo-form">
+    <input id="todo-input" type="text" placeholder="Write A To Do and Press Enter" required />
+  </form>
+  <ul id ="todo-list">
 
-  <body>
-    <h1>Random Number Game</h1>
-    <h2>Generate a number between 0 and </h2> 
-    <form id="baseform">
-      <input id="basenumber"
-      required
-      type="number"
-      min="0"
-      > 
-      </input>
-    <h3> Guess the number </h3>
-      <input id="mynumber" 
-      required
-     
-      min="0"
-      
-      > </input>
-      
-      <input 
-      id="submit"
-      type="submit"
-      value="Play!"
-      /input>
-    </form>
-    <div class="gamestate hidden" > 상태임 </div>
-    <div class="gameresult hidden"> 결과임 </div>
+  </ul>
+  <div id="quote">
+    <span></span>
+    <span></span>
+  </div>
+  <div id="weather">
+    <span>1234</span>
+    <span>4567</span>
+  </div>
 
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-  </body>
+  <script src="JS/script.js"></script>
+  <script src="JS/clock.js"></script>
+  <script src="JS/quotes.js"></script>
+  <script src="JS/background.js"></script>
+  <script src="JS/todo.js"></script>
+  <script src="JS/weather.js"></script>
+</body>
+
 </html>
+<!-- input 속성 , required => 필수로 입력 , maxlength => 최대글자수 제한  -->
