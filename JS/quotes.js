@@ -45,7 +45,9 @@ const quotes = [
 const quote = document.querySelector("#quote span:first-child")
 const author = document.querySelector("#quote span:last-child")
 
-const toDaysQuotes = quotes[Math.floor(Math.random())*quotes.length]
+const toDaysQuotes = quotes[Math.floor(Math.random()*quotes.length)]
+
+console.log(Math.ceil(Math.random()))
 
 quote.textContent = toDaysQuotes.quote;
 author.textContent = `-${toDaysQuotes.author}-`;
